@@ -25,36 +25,48 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
+    font-size: 8vw;
     font-weight: 700;
 }
 
-.text-vertical-center a{
-  font-size: 20vh;
-  color: white;
-  text-decoration: none;
-  transition: 1s;
+.youtube-player-icon{
+  font-size: 20vh !important;
+  color: white !important;
+  text-decoration: none !important;
+  transition: 1s !important;
 }
 
-.text-vertical-center a:hover{
-  font-size: 30vh;
-  color: black;
-  text-decoration: none;
+.youtube-player-icon:hover{
+  font-size: 30vh !important;
+  color: black !important;
+  text-decoration: none !important;
+}
 
+.social-icon{
+  color: #FBCF47 !important;
+  text-decoration: none !important;
+  transition: 1s !important;
+  font-size: 3vw !important;
+}
+
+.social-icon:hover{
+  color: #DC551E !important;
+  text-decoration: none !important;
 }
 
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
-    color: #fff;
+    box-shadow: 0 0 4px 4px;
+    color: #FBCF47;
     background-color: rgba(0,0,0,0.4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
-    color: #fff;
+    color: #DC551E;
     background-color: rgba(0,0,0,0.7);
 }
 
@@ -87,7 +99,7 @@ hr.small {
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: #222;
+    background: #444;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -169,7 +181,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bgTop.jpg) no-repeat center center scroll;
+    background: url(../img/asa1.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -247,7 +259,8 @@ hr.small {
 }
 
 .videoModal-internal{
-  height: 100%;
+  margin-top: 5%;
+  height: 80%;
   width: 75%;
   position: absolute;
   left: 12.5%;
@@ -258,6 +271,58 @@ hr.small {
 }
 /* Footer */
 
+@font-face {
+  font-family: Astronauta;
+  font-style: normal;
+  font-weight: normal;
+  src: url('Astronauta.otf');
+}
+
+.line-footer{
+  color: #fff;
+  position: absolute;
+  bottom: 5%;
+  font-size: 10px;
+  width: 100%;
+  }
+
+.line-footer p{
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  display: block;
+}
+
+.binn-logo{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.wanderlust{
+  margin: 5%;
+  background-color: #111;
+}
+
+.wanderlust-text{
+  color: #fff;
+}
+
+.album-title{
+  background-color: #222;
+  margin-right: 10px;
+}
+
+.album-desc{
+  background-color: #171717;
+  margin-right: 10px;
+}
+
+.field-text{
+  margin-top: 10%;
+  font-size: 6px;
+}
 footer {
     padding: 100px 0;
 }

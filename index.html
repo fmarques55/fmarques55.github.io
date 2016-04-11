@@ -41,29 +41,44 @@
         <a href="#top" onclick=$ ( "#menu-close").click();>Navegação</a>
       </li>
       <li>
-        <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
+        <a href="#" data-toggle="modal" data-target="#homeModal" onclick=$ ( "#menu-close").click();>Home</a>
       </li>
       <li>
-        <a href="#about" onclick=$ ( "#menu-close").click();>Galeria</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Sobre</a>
       </li>
       <li>
-        <a href="#services" onclick=$ ( "#menu-close").click();>Acessoria de Imprensa</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Galeria</a>
       </li>
       <li>
-        <a href="#portfolio" onclick=$ ( "#menu-close").click();>Contato</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Acessoria de Imprensa</a>
+      </li>
+      <li>
+        <a href="#" onclick=$ ( "#menu-close").click();>Vídeos</a>
+      </li>
+      <li>
+        <a href="#" onclick=$ ( "#menu-close").click();>Contato</a>
       </li>
     </ul>
+    <div class="line-footer">
+      <a href="http://www.binn.com.br" target="_blank"><img src="img/binn.png" alt="" class="binn-logo"/>
+      <p>Desenvolvido por Binn Soluções Tecnológicas</p></a>
+    </div>
   </nav>
 
   <!-- Header -->
   <header id="top" class="header">
     <div class="text-vertical-center">
-      <h1>Astronauta e seus amigos</h1>
-      <h3>Conheça nosso novo som: Believe</h3>
+      <a class="fa fa-facebook social-icon "></a> &nbsp;
+      <a class="fa fa-instagram social-icon"></a> &nbsp;
+      <a class="fa fa-twitter social-icon"></a> &nbsp;
+      <a class="fa fa-youtube social-icon"></a> &nbsp;
+      <a class="fa fa-music social-icon"></a> &nbsp;
+      <h1 style="font-family: Astronauta; color: #fff;">Astronauta e seus amigos</h1>
       <br>
-      <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-youtube-play"></a>
+      <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-youtube-play youtube-player-icon"></a><br>
     </div>
   </header>
+
 
   <!-- Video Modal -->
   <div id="videoModal" class="modal fade" role="dialog">
@@ -73,6 +88,24 @@
       <!-- <a href="#" class="fa fa-download">Download Gratuito</a> -->
     </div>
 
+  </div>
+
+  <div id="homeModal" class="modal fade" role="dialog">
+    <div class="wanderlust">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/wanderlust-albumcover.jpg" alt="" style="width: 100%; padding: 1%;"/>
+        </div>
+        <div class="col-md-8">
+          <div class="album-title">
+            <h2 class="wanderlust-text">Wanderlust</h2>
+          </div>
+          <div class="album-desc">
+            <h4>Descriçao meio escrota escritas de qualquer jeito sobre esse album</h4>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- jQuery -->
