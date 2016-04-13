@@ -303,33 +303,70 @@ hr.small {
 .wanderlust{
   margin: 5%;
   background-color: #111;
+  border-radius: 20px;
 }
 
 .wanderlust-text{
   color: #fff;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .album-title{
   background-color: #222;
-  margin-right: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .download-link{
-  color: #FBCF47;
+  color: #FBCF47 !important;
+  text-decoration: none !important;
 }
 
 .download-link:hover{
-  color: orange;
-  text-decoration: none;
+  color: orange !important;
+  text-decoration: none !important;
 }
 .album-desc{
   background-color: #171717;
-  margin-right: 10px;
+  margin: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+.desc-text{
+  margin: 2%;
 }
 
 .field-text{
   margin-top: 10%;
   font-size: 6px;
+}
+
+.centralized{
+  display: table !important;
+  margin: auto;
+}
+.page-title{
+  display: table;
+  color: #fff;
+  font-family: fantasy;
+  line-height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.track{
+  background-color: #111;
+  margin: 10px;
+}
+.track audio{
+  width: 100%;
+}
+.album-art{
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
 footer {
     padding: 100px 0;

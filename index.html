@@ -41,7 +41,10 @@
         <a href="#top" onclick=$ ( "#menu-close").click();>Navegação</a>
       </li>
       <li>
-        <a href="#" data-toggle="modal" data-target="#homeModal" onclick=$ ( "#menu-close").click();>Home</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Home</a>
+      </li>
+      <li>
+        <a href="#" data-toggle="modal" data-target="#downloadModal" onclick=$ ( "#menu-close").click();>Downloads</a>
       </li>
       <li>
         <a href="#" onclick=$ ( "#menu-close").click();>Sobre</a>
@@ -76,7 +79,7 @@
       <h1 style="font-family: Astronauta; color: #fff;">Astronauta e seus amigos</h1>
       <br>
       <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-youtube-play youtube-player-icon"></a><br>
-      <a class="download-link" href="#">Clique aqui para fazer o download de Wanderlust</a>
+      <a href="#" data-toggle="modal" data-target="#downloadModal" class="download-link">Faça o download gratuito de Wanderlust</a>
     </div>
   </header>
 
@@ -86,28 +89,42 @@
     <div class="videoModal-internal">
       <iframe width="100%" class="iframe-video-modal" height="100%" src="https://www.youtube.com/embed/KMl8UrI-cec">
       </iframe>
-      <!-- <a href="#" class="fa fa-download">Download Gratuito</a> -->
     </div>
 
   </div>
 
-  <!-- <div id="homeModal" class="modal fade" role="dialog">
+  <div id="downloadModal" class="modal fade" role="dialog">
     <div class="wanderlust">
+      <h1 class="page-title">DOWNLOADS</h1>
       <div class="row">
         <div class="col-md-4">
-          <img src="img/wanderlust-albumcover.jpg" alt="" style="width: 100%; padding: 1%;"/>
+          <img src="img/wanderlust-albumcover.jpg" alt="" class="album-art"/>
         </div>
         <div class="col-md-8">
           <div class="album-title">
             <h2 class="wanderlust-text">Wanderlust</h2>
           </div>
           <div class="album-desc">
-            <h4>Descriçao meio escrota escritas de qualquer jeito sobre esse album</h4>
+            <h4 class="desc-text">Descriçao do album com texto gigante para ver se ele está com alguma quebra de linha ou algo que deixe tudo muito escroto, na qual os estilos que eu to jogando não vão pegar</h4>
           </div>
+          <div class="track">
+            <label href="#">1. Believe</label><br>
+            <audio controls class="audio-player">
+              <source src="http://" type="mimetype">
+            </audio>
+          </div>
+          <div class="track">
+            <label href="#">2. Aos seus amores</label><br>
+            <audio controls class="audio-player">
+              <source src="http://" type="mimetype">
+            </audio>
+          </div>
+
+          <a href="#" class="fa fa-download download-link centralized">&nbsp;Download Gratuito do Album</a>
         </div>
       </div>
     </div>ind
-  </div> -->
+  </div>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
