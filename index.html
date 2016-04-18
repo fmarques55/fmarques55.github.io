@@ -41,60 +41,66 @@
         <a href="#top" onclick=$ ( "#menu-close").click();>Navegação</a>
       </li>
       <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Home</a>
+        <a href="#" data-toggle="modal" data-target="#newsModal" onclick=$ ( "#menu-close").click();>News</a>
       </li>
       <li>
-        <a href="#" data-toggle="modal" data-target="#downloadModal" onclick=$ ( "#menu-close").click();>Downloads</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Shows</a>
       </li>
       <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Sobre</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Sobre / About</a>
       </li>
       <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Galeria</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Fotos / Photos</a>
       </li>
       <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Acessoria de Imprensa</a>
+        <a href="#" data-toggle="modal" data-target="#downloadModal" onclick=$ ( "#menu-close").click();>Download</a>
       </li>
       <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Vídeos</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Videos</a>
       </li>
       <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Contato</a>
+        <a href="#" onclick=$ ( "#menu-close").click();>Contato / Contact</a>
+      </li>
+      <li>
+        <a href="#" onclick=$ ( "#menu-close").click();>Blog</a>
       </li>
     </ul>
     <div class="line-footer">
-      <a href="http://www.binn.com.br" target="_blank"><img src="img/binn.png" alt="" class="binn-logo"/>
-      <p>Desenvolvido por Binn Soluções Tecnológicas</p></a>
+      <a href="http://www.binn.com.br" target="_blank"><img src="img/binn-facebook.png" alt="" class="binn-logo"/>
+      <p>Desenvolvido por Binn Soluções Tecnológicas (Designed by Binn IT Soluctions)</p></a>
     </div>
   </nav>
 
   <!-- Header -->
   <header id="top" class="header">
     <div class="text-vertical-center">
-      <a class="fa fa-facebook social-icon "></a> &nbsp;
-      <a class="fa fa-instagram social-icon"></a> &nbsp;
-      <a class="fa fa-twitter social-icon"></a> &nbsp;
-      <a class="fa fa-youtube social-icon"></a> &nbsp;
-      <a class="fa fa-music social-icon"></a> &nbsp;
+      <a href="https://www.facebook.com/astronautaeseusamigos/?fref=ts" target="_blank" class="fa fa-facebook social-icon "></a> &nbsp;
+      <a href="http://instagram.com/astronautaeseusamigos/" target="_blank" class="fa fa-instagram social-icon"></a> &nbsp;
+      <a href="https://twitter.com/eseusamigos" target="_blank" class="fa fa-twitter social-icon"></a> &nbsp;
+      <a href="https://www.youtube.com/channel/UCzS2Y1t1xBMTex5i7mEhihw" target="_blank" class="fa fa-youtube social-icon"></a> &nbsp;
+      <a href="https://itunes.apple.com/us/artist/astronauta-e-seus-amigos/id1089027074" target="_blank" class="fa fa-music social-icon"></a> &nbsp;
+      <a href="http://open.spotify.com/album/7pIVocKr3StDOcCXgSragB" target="_blank" class="fa fa-spotify social-icon"></a> &nbsp;
+      <a href="http://www.deezer.com/artist/9953264" target="_blank" class="fa fa-signal social-icon"></a> &nbsp;
+      <a href="https://soundcloud.com/astronautaeseusamigos" target="_blank" class="fa fa-soundcloud social-icon"></a> &nbsp;
       <h1 style="font-family: Astronauta; color: #fff;">Astronauta e seus amigos</h1>
       <br>
-      <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-youtube-play youtube-player-icon"></a><br>
-      <a href="#" data-toggle="modal" data-target="#downloadModal" class="download-link">Faça o download gratuito de Wanderlust</a>
+      <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-play youtube-player-icon"></a><br>
+      <a href="#" data-toggle="modal" data-target="#downloadModal" class="download-link">Faça o download gratuito de Wanderlust / Free download for Wanderlust </a>
     </div>
   </header>
 
 
-  <!-- Video Modal -->
+  <!-- Believe Video Modal -->
   <div id="videoModal" class="modal fade" role="dialog">
     <div class="videoModal-internal">
       <iframe width="100%" class="iframe-video-modal" height="100%" src="https://www.youtube.com/embed/KMl8UrI-cec">
       </iframe>
     </div>
-
   </div>
 
+<!--  Download Section-->
   <div id="downloadModal" class="modal fade" role="dialog">
-    <div class="wanderlust">
+    <div class="page-bg">
       <h1 class="page-title">DOWNLOADS</h1>
       <div class="row">
         <div class="col-md-4">
@@ -102,29 +108,56 @@
         </div>
         <div class="col-md-8">
           <div class="album-title">
-            <h2 class="wanderlust-text">Wanderlust</h2>
+            <h2 class="page-text">Wanderlust</h2>
           </div>
           <div class="album-desc">
             <h4 class="desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
           </div>
           <div class="track">
             <label href="#">1. Believe</label><br>
-            <audio controls class="audio-player">
-              <source src="http://" type="mimetype">
-            </audio>
           </div>
           <div class="track">
             <label href="#">2. Aos seus amores</label><br>
-            <audio controls class="audio-player">
-              <source src="http://" type="mimetype">
-            </audio>
           </div>
 
-          <a href="#" class="fa fa-download download-link centralized">&nbsp;Download Gratuito do Album</a>
+          <a href="#" class="fa fa-download download-link centralized">&nbsp;DOWNLOAD GRATUITO DE WANDERLUST (Free Download for Wanderlust)</a>
         </div>
       </div>
-    </div>ind
+    </div>
   </div>
+
+  <!-- News Section-->
+    <div id="newsModal" class="modal fade" role="dialog">
+      <div class="page-bg">
+        <h1 class="page-title">NEWS</h1>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="news-title">
+                <h2>Título do tópico</h2>
+                <h4>Data: XX/XX/XXXX</h4>
+              </div>
+              <div class="news-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                </p>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
@@ -133,36 +166,7 @@
   <script src="js/bootstrap.min.js"></script>
 
   <!-- Custom Theme JavaScript -->
-  <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-      e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+  <script src="js/menu-script.js"></script>
 
 </body>
 
