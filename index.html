@@ -35,39 +35,42 @@
   <!-- Navigation -->
   <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
   <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-      <li class="sidebar-brand">
-        <a href="#top" onclick=$ ( "#menu-close").click();>Navegação</a>
-      </li>
-      <li>
-        <a href="#" data-toggle="modal" data-target="#newsModal" onclick=$ ( "#menu-close").click();>News</a>
-      </li>
-      <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Shows</a>
-      </li>
-      <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Sobre / About</a>
-      </li>
-      <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Fotos / Photos</a>
-      </li>
-      <li>
-        <a href="#" data-toggle="modal" data-target="#downloadModal" onclick=$ ( "#menu-close").click();>Download</a>
-      </li>
-      <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Videos</a>
-      </li>
-      <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Contato / Contact</a>
-      </li>
-      <li>
-        <a href="#" onclick=$ ( "#menu-close").click();>Blog</a>
-      </li>
-    </ul>
-    <div class="line-footer">
-      <a href="http://www.binn.com.br" target="_blank"><img src="img/binn-facebook.png" alt="" class="binn-logo"/>
-      <p>Desenvolvido por Binn Soluções Tecnológicas (Designed by Binn IT Soluctions)</p></a>
+    <div class="nav-items">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+          <!-- <a href="#top" onclick=$ ( "#menu-close").click();>Navegação</a> -->
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#newsModal" onclick=$("#menu-close").click();>News</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#showsModal" onclick=$("#menu-close").click();>Shows</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#aboutModal" onclick=$("#menu-close").click();>Sobre / About</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#galleryModal" onclick=$("#menu-close").click();>Fotos / Photos</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#downloadModal" onclick=$ ( "#menu-close").click();>Download</a>
+        </li>
+        <li>
+          <a href="#" onclick=$("#menu-close").click();>Videos</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#contactModal" onclick=$("#menu-close").click();>Contato / Contact</a>
+        </li>
+        <li>
+          <a href="#" onclick=$("#menu-close").click();>Blog</a>
+        </li>
+      </ul>
+      <div class="line-footer">
+        <a href="http://www.binn.com.br" target="_blank"><img src="img/binn-facebook.png" alt="" class="binn-logo" />
+          <p>Desenvolvido por Binn Soluções Tecnológicas (Designed by Binn IT Soluctions)</p>
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -82,10 +85,11 @@
       <a href="http://open.spotify.com/album/7pIVocKr3StDOcCXgSragB" target="_blank" class="fa fa-spotify social-icon"></a> &nbsp;
       <a href="http://www.deezer.com/artist/9953264" target="_blank" class="fa fa-signal social-icon"></a> &nbsp;
       <a href="https://soundcloud.com/astronautaeseusamigos" target="_blank" class="fa fa-soundcloud social-icon"></a> &nbsp;
-      <h1 style="font-family: Astronauta; color: #fff;">Astronauta e seus amigos</h1>
+      <h1 style="font-family: Astronauta; color: #fff;">astronauta e seus amigos</h1>
       <br>
-      <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-play youtube-player-icon"></a><br>
-      <a href="#" data-toggle="modal" data-target="#downloadModal" class="download-link">Faça o download gratuito de Wanderlust / Free download for Wanderlust </a>
+      <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-play youtube-player-icon"></a>
+      <br>
+      <a href="#" data-toggle="modal" data-target="#downloadModal" class="download-link">Faça o download gratuito de Wanderlust <br> Free download for Wanderlust </a>
     </div>
   </header>
 
@@ -98,13 +102,13 @@
     </div>
   </div>
 
-<!--  Download Section-->
+  <!--  Download Section-->
   <div id="downloadModal" class="modal fade" role="dialog">
     <div class="page-bg">
       <h1 class="page-title">DOWNLOADS</h1>
       <div class="row">
         <div class="col-md-4">
-          <img src="img/wanderlust-albumcover.jpg" alt="" class="album-art"/>
+          <img src="img/wanderlust-albumcover.jpg" alt="" class="album-art" />
         </div>
         <div class="col-md-8">
           <div class="album-title">
@@ -114,10 +118,12 @@
             <h4 class="desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
           </div>
           <div class="track">
-            <label href="#">1. Believe</label><br>
+            <label href="#">1. Believe</label>
+            <br>
           </div>
           <div class="track">
-            <label href="#">2. Aos seus amores</label><br>
+            <label href="#">2. Aos seus amores</label>
+            <br>
           </div>
 
           <a href="#" class="fa fa-download download-link centralized">&nbsp;DOWNLOAD GRATUITO DE WANDERLUST (Free Download for Wanderlust)</a>
@@ -127,38 +133,168 @@
   </div>
 
   <!-- News Section-->
-    <div id="newsModal" class="modal fade" role="dialog">
-      <div class="page-bg">
-        <h1 class="page-title">NEWS</h1>
-        <div class="row">
-            <div class="col-md-12">
-              <div class="news-title">
-                <h2>Título do tópico</h2>
-                <h4>Data: XX/XX/XXXX</h4>
-              </div>
-              <div class="news-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div id="newsModal" class="modal fade" role="dialog">
+    <div class="page-bg">
+      <h1 class="page-title">NEWS</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="news-title">
+            <h2>Título do tópico</h2>
+            <h4>Data: XX/XX/XXXX</h4>
+          </div>
+          <div class="news-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-                </p>
-              </div>
-            </div>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--  Shows Section-->
+  <div id="showsModal" class="modal fade" role="dialog">
+    <div class="page-bg">
+      <h1 class="page-title">SHOWS</h1>
+      <div class="shows-content">
+        <table class="shows-table">
+          <tr>
+            <td>
+              Localização
+            </td>
+            <td>
+              Cidade
+            </td>
+            <td>
+              Data
+            </td>
+            <td>
+              Tickets
+            </td>
+          </tr>
+          <tr>
+            <td>
+              -
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              <button type="button" name="name" href="#" value="Tickets" class="get-ticket">Comprar</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!--  About Section-->
+  <div id="aboutModal" class="modal fade" role="dialog">
+    <div class="page-bg">
+      <h1 class="page-title">Sobre/About</h1>
+      <div class="about-content">
+        <img src="img/_MG_2623.jpg" alt="" class="about-image"/>
+        <p>
+          Astronauta e Seus Amigos é um projeto que começou na cidade de Manchester, em 2013. Pedro Rodolpho e Lucas Pitangueira se conheceram no alojamento da faculdade em que estavam em intercâmbio acadêmico e começaram a produzir, ainda sem a pretensão de criar um projeto.
+          Gradativamente, tiveram a adição de Glênio Machado, GAP GAP, Kezia Áurea - que moravam na mesma casa deles - e Bret Elis para a criação e gravação das faixas que viriam a se tornar Wanderlust, que foram fortemente influenciadas por períodos de imersão, autoconhecimento e desapego e, musicalmente, do Rock Psicodélico de Tame Impala, Temples e Boogarins ao Dream Pop de The Land Below e Beach House, passando pelo post rock do Explosions in the Sky e o cenário musical islandês, de Sigur Rós a Low Roar.
+          Com o retorno ao Brasil, em 2014, a (agora) banda passou a ser baseada em Brasília, integrada por Pedro Rodolpho, Pedro Aurélio, Pedro Carvalho, Paulo Vitor Amuy e Gabriel "Feliz", e atualmente é integrada por Marcella Imparato, na bateria; Pedro Rodolpho, voz, synths e violão; Pedro Carvalho, guitarras; Paulo Vitor Amuy, baixo. Paralelamente, Wanderlust era mixado por Lucas Pitangueira/Onda Nuvem - produtor e músico - na capital baiana, enquanto algumas faixas eram finalizadas à partir da troca de arquivos de dropbox.
+        </p>
+      </div>
+      <div class="about-content-english">
+        <p>
+          Astronauta e Seus Amigos is a project that started in the city of Manchester, in 2013. Pedro Rodolpho and Lucas Pitangueira met each other while living in the same house in the student village they were living while on a student exchange and started to produce, still without the pretension of creating a project.
+          Gradually, they had the addition of Glênio Machado, GAP GAP, Kezia Aurea - that lived with them - and Bret Elis to create and record the tracks that would integrate Wanderlust, and were strongly influenced by times of immersion, self-knowledge, unatachment and, musically, from the Psychedelic Rock of Tame Impala, Temples and Boogarins to the Dream Pop of The Land Below and Beach House, passing through the post rock of Explosions in the Sky and the Icelandic Musical Scene, from Sigur Rós to Low Roar.
+          With their return to Brazil, in 2014, the (now) band started to be based in Brasilia, integrated by Pedro Rodolpho, Pedro Aurélio, Pedro Carvalho, Paulo Vitor Amuy and Gabriel "Happy", and is now integrated by Marcella Imparato, in the drums; Pedro Rodolpho, on voice, synths and guitar; Pedro Carvalho, on guitars and Paulo Vitor Amuy, on bass. Simultaneously, Wanderlust was mixed by Lucas Pitangueira/Onda Nuvem - producer and musician - on Salvador(1500km away from Brasilia), while some of tracks were finished by the exchange of files on dropbox.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Gallery Section-->
+  <!-- <div id="galleryModal" class="modal fade" role="dialog">
+    <div class="page-bg">
+      <h1 class="page-title">Fotos/Photos</h1>
+      <div class="gallery-content">
+        <div class="gallery-big-image">
+          <div class="selector-back">
+            <a href="#"><</a>
+          </div>
+          <img src="img/_MG_2623.jpg" class="big-image" alt="" />
+          <div class="selgit ector-next">
+            <a href="#">></a>
+          </div>
+        </div>
+        <div class="gallery-thumbnails">
 
         </div>
       </div>
     </div>
+  </div> -->
 
+  <!--  Contact Section-->
+  <div id="contactModal" class="modal fade" role="dialog">
+    <div class="page-bg">
+      <h1 class="page-title">Contato/Contact</h1>
+      <div class="contact-content">
+        <h3>
+          Fale conosco / Come and say hi to us
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>
+              Contato 1
+            </h4>
+          </div>
+          <div class="col-md-4">
+            <h4>
+              Contato 2
+            </h4>
+          </div>
+          <div class="col-md-4">
+            <h4>
+              Contato 3
+            </h4>
+          </div>
+        </div>
+        <form action="" method="">
+          <div class="form-content">
+            <input type="text" name="nameInput" value="" placeholder="Nome" class="contact-input"><br>
+            <input type="text" name="emailInput" value="" placeholder="Email" class="contact-input"><br>
+            <input type="text" name="subjectInput" value="" placeholder="Assunto" class="contact-input"><br>
+            <textarea name="message" rows="20" cols="40" value="Mensagem: " class="contact-input"></textarea>
+            <input type="submit" name="submit" value="Enviar" class="submit-contact-form">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
 
