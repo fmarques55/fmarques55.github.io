@@ -54,7 +54,7 @@
           <a href="#" data-toggle="modal" data-target="#galleryModal" onclick=$("#menu-close").click();>Fotos / Photos</a>
         </li>
         <li>
-          <a href="#" data-toggle="modal" data-target="#downloadModal" onclick=$ ("#menu-close").click();>Download</a>
+          <a href="#" data-toggle="modal" data-target="#downloadModal" onclick=$("#menu-close").click();>Download</a>
         </li>
         <li>
           <a href="#" onclick=$("#menu-close").click();>Videos</a>
@@ -63,7 +63,7 @@
           <a href="#" data-toggle="modal" data-target="#contactModal" onclick=$("#menu-close").click();>Contato / Contact</a>
         </li>
         <li>
-          <a href="#" onclick=$("#menu-close").click();>Blog</a>
+          <a href="#" data-toggle="modal" data-target="#blogModal" onclick=$("#menu-close").click();>Blog</a>
         </li>
       </ul>
       <div class="line-footer">
@@ -89,7 +89,7 @@
       <br>
       <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-play youtube-player-icon"></a>
       <br>
-      <a href="#" data-toggle="modal" data-target="#downloadModal" class="download-link">Faça o download gratuito de Wanderlust <br> Free download for Wanderlust </a>
+      <a href="#" data-toggle="modal" data-target="#downloadModal" class="download-link">Baixe Wanderlust <br> Download Wanderlust </a>
     </div>
   </header>
 
@@ -115,15 +115,19 @@
             <h2 class="page-text">Wanderlust</h2>
           </div>
           <div class="album-desc">
-            <h4 class="desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+            <div class="desc-text">
+              Wanderlust é uma palavra alemã que traduz um forte desejo de ir em encontro ao desconhecido. Com esse background emocional, o álbum foi escrito, entre viagens de trem, estações de ônibus vazias, cidades desconhecidas e encontros inesperados.
+              Wanderlust é o resultado de mais de dois anos de colaboração entre o produtor baiano Lucas Pitangueira/Onda Nuvem, Astronauta e Seus Amigos e o suporte de quase uma dúzia de músicos e um número ainda maior de amigos em um número variado de países.
+              É um álbum que fala sobre a impermanência dos ciclos da vida, sobre a gratidão e a amizade, e foi gravado entre Manchester(Reino Unido), Brasília, Salvador e Goiânia, de 2013 a 2016.
+              <br>
+              <div class="desc-text-english">
+                'Wanderlust' is a german word which translates a strong desire to go into the unknown. With this emotional background, this album was written, between train rides, empty bus stations, unknown cities and unexpected meetings.
+                Wanderlust is the result of more than two years of collaboration between the producer Onda Nuvem, Astronauta e Seus Amigos(Astronaut and his Friends) and the support of almost a dozen musicians and an even bigger number of friends.
+                It is an album about the impermanence of the cicles of life, gratefulness and friendship, and it was recorded between England and a bunch of different cities in Brazil. </h4>
+              </div>
           </div>
-          <div class="track">
-            <label href="#">1. Believe</label>
-            <br>
-          </div>
-          <div class="track">
-            <label href="#">2. Aos seus amores</label>
-            <br>
+          <div class="spotify-web-player">
+            <iframe src="https://embed.spotify.com/?uri=spotify:album:7pIVocKr3StDOcCXgSragB" width="100%" height="300px" frameborder="0" allowtransparency="true"></iframe>
           </div>
 
           <a href="#" class="fa fa-download download-link centralized">&nbsp;DOWNLOAD GRATUITO DE WANDERLUST (Free Download for Wanderlust)</a>
@@ -131,47 +135,50 @@
       </div>
     </div>
   </div>
+</div>
 
   <!-- News Section-->
   <div id="newsModal" class="modal fade" role="dialog">
     <div class="page-bg">
       <h1 class="page-title">NEWS</h1>
       <div class="row">
+        <!--  Inicio de uma noticia-->
         <div class="col-md-12">
           <div class="news-title">
-            <h2>Título do tópico</h2>
-            <h4>Data: XX/XX/XXXX</h4>
+            <h2>Estréia do novo site!</h2>
+            <h4>Data: 29/04/2016</h4>
           </div>
           <div class="news-content">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-              id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+              É com alegria que nosso primeiro post na seção de novidades do nosso site é justamente sobre... as novidades no nosso site. Você ainda consegue encontrar o link para download de Wanderlust(que nessa altura, você já deve saber que dá pra ouvir em todas as plataformas de streaming, e no youtube), bem como link para os lyric videos que lançamos até agora, fotos e informações da banda. Vamos atualizar por aqui - na seção Shows -  as datas e locais dos próximos shows. Se tá afim de nos ver ao vivo, fique de olho!
+              Pra completar, estamos estreiando a seção do nosso blog - o qual vamos atualizar no nosso tumblr astronautaeseusamigos. Vamos contar do processo por trás da criação de Wanderlust - que começou lá na Inglaterra, em 2013; sobre nossas influências, motivações e do que está acontecendo conosco atualmente. Queremos que você entre no nosso universo.
+              Por hora, se ainda não tiver feito isso, passe no nosso Instagram e no nosso facebook e siga nossa página, sempre atualizamos as novidades por lá.
+              Por hora, gostariamos também, de fazer um agradecimento especial aos parceiros da Binn Soluções Tecnológicas, que desenvolveu o site. Curtiram? Aproveitem também pra passar na página deles.
+              xx astronauta e seus amigos
+            </p>
+            <br>
+            <p>
+              Hi, we're happy that the first post in the news section of our site is exactly about... the news in our site. You can still find a link to download Wanderlust(that by now, you're probably aware that you can listen to it on every streaming platform and on youtube), as well as the link to the lyric videos we released so far, photos and info about the project.We'll update around here - in the section Shows - the date and places of the next gigs.
+              To complete, we're also premiering the section of our blog - which we'll update on our tumblr astronautaeseusamigos. We'll talk about the process behind the creation of Wanderlust - that started in England, back in 2013; our influences, motivations and what's going on with us recently. We want you to get into our universe.
+              By now, if you haven't done it yet, check out our Instagram/Facebook and follow our page if you want to have news from us - we always update our news around there.
+              For now, we'd also like to thank our partners of Binn Technological Solutions, that developed our new page. Did you guys like it? Check out their work as well!
+              xx astronauta e seus amigos
             </p>
           </div>
         </div>
+        <!-- Fim de uma noticia -->
 
+        <!--  Inicio de uma noticia-->
+        <div class="col-md-12">
+          <div class="news-title">
+            <h2>Noticia Vitrine</h2>
+            <h4>Data: XX/XX/XXXX</h4>
+          </div>
+          <div class="news-content">
+            Aqui fica o corpo de uma nova notícia. Essa notícia serve apenas para mostrar como está a divisão entre uma notícia e outra.
+          </div>
+        </div>
+        <!-- Fim de uma noticia -->
       </div>
     </div>
   </div>
@@ -181,7 +188,12 @@
     <div class="page-bg">
       <h1 class="page-title">SHOWS</h1>
       <div class="shows-content">
-        <table class="shows-table">
+        <div class="shows-table">
+          <p style="text-align: center;">
+            Estamos trabalhando nas futuras datas. Fique de olho nas atualizações por aqui e em nossas redes sociais. <br> We are currently working on future dates, so keep an eye open on the updates around here and in our social network.
+          </p>
+        </div>
+        <!-- <table class="shows-table">
           <tr>
             <td>
               Localização
@@ -210,7 +222,7 @@
               <button type="button" name="name" href="#" value="Tickets" class="get-ticket">Comprar</button>
             </td>
           </tr>
-        </table>
+        </table> -->
       </div>
     </div>
   </div>
@@ -288,13 +300,24 @@
             <input type="text" name="nameInput" value="" placeholder="Nome" class="contact-input"><br>
             <input type="text" name="emailInput" value="" placeholder="Email" class="contact-input"><br>
             <input type="text" name="subjectInput" value="" placeholder="Assunto" class="contact-input"><br>
-            <textarea name="message" rows="20" cols="40" value="Mensagem: " class="contact-input"></textarea>
+            <textarea name="message" rows="10" cols="40" value="Mensagem: " class="contact-input"></textarea>
             <input type="submit" name="submit" value="Enviar" class="submit-contact-form">
         </div>
         </form>
       </div>
     </div>
   </div>
+
+  <!--  Blog Section-->
+  <div id="blogModal" class="modal fade" role="dialog">
+    <div class="page-bg">
+      <h1 class="page-title">Blog</h1>
+      <div class="blog-content">
+         <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/hXJB9Wr9xioW-Ww53maDJw/143095211807" data-did="105159fe43e4a616b1790dc5575210e10c61f768"><a href="http://astronautaeseusamigos.tumblr.com/post/143095211807/oi">http://astronautaeseusamigos.tumblr.com/post/143095211807/oi</a></div>  <script async src="https://secure.assets.tumblr.com/post.js"></script>
+      </div>
+    </div>
+  </div>
+
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
 

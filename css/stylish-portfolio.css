@@ -338,12 +338,19 @@ hr.small {
   text-transform: uppercase !important;
 }
 .album-desc{
-  background-color: #171717;
+  color: #AAA;
   margin: 10px;
   border-radius: 0px 0px 10px 10px;
+  text-align: justify;
 }
 .desc-text{
   margin: 2%;
+  font-size: 12px;
+}
+
+.desc-text-english{
+  margin: 2%;
+  font-size: 10px;
 }
 
 .field-text{
@@ -365,12 +372,10 @@ hr.small {
 
 }
 
-.track{
-  background-color: #111;
-  margin: 10px;
-}
-.track audio{
-  width: 100%;
+.spotify-web-player{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .album-art{
   width: 100%;
@@ -547,6 +552,14 @@ hr.small {
   color: #FBCF47;
   border-radius: 20px;
   border-color: #FBCF47;
+}
+
+.blog-content{
+  width: 100%;
+  margin: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
