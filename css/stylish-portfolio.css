@@ -126,6 +126,7 @@ hr.small {
 }
 
 .sidebar-nav li a {
+    font-family: Champagne;
     display: block;
     text-decoration: none;
     color: #FFF;
@@ -282,6 +283,20 @@ hr.small {
   src: url('Astronauta.otf');
 }
 
+@font-face {
+  font-family: Champagne;
+  font-style: normal;
+  font-weight: normal;
+  src: url('Champagne & Limousines.ttf');
+}
+
+@font-face {
+  font-family: LemonMilk;
+  font-style: normal;
+  font-weight: normal;
+  src: url('LemonMilk.otf');
+}
+
 .line-footer{
   color: #fff;
   /*position: absolute;*/
@@ -314,6 +329,7 @@ hr.small {
 }
 
 .page-text{
+  font-family: Champagne !important;
   color: #fff;
   display: table;
   margin-left: auto;
@@ -327,6 +343,7 @@ hr.small {
 }
 
 .download-link{
+  font-family: LemonMilk;
   color: #FBCF47 !important;
   text-decoration: none !important;
   text-transform: uppercase !important;
@@ -363,9 +380,9 @@ hr.small {
   margin: auto;
 }
 .page-title{
+  font-family: Champagne !important;
   display: table;
   color: #fff;
-  font-family: serif;
   line-height: 10%;
   margin-left: auto;
   margin-right: auto;
@@ -391,13 +408,14 @@ hr.small {
 .news-title h2{
   color: #fff;
   font-weight: bolder;
-  font-family: cursive;
+  font-family: LemonMilk;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .news-title h4{
+  font-family: LemonMilk;
   color: #FBCF47;
   text-align: center;
   display: block;
@@ -493,8 +511,16 @@ hr.small {
 }
 
 .image-desc{
-  top: 1%;
+  font-family: Champagne;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
 }
+
 .big-image{
   display: block;
   margin-left: auto;
@@ -511,6 +537,7 @@ hr.small {
 }
 
 .image-thumbnail:hover{
+  background-color: rgba(17, 17, 17, 0.71);
   border: solid;
   border-color: #FBCF47;
   outline: none !important;
