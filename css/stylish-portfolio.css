@@ -44,8 +44,12 @@ body {
   stroke: #000;
 }
 
+#deezer-icon:hover{
+  src: url('../img/deezer-alaranjado.svg');
+}
 .deezer-iconSVG{
   height: 3vw;
+  margin-bottom: 1.5%;
 }
 
 .youtube-player-icon{
