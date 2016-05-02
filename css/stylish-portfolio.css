@@ -40,8 +40,6 @@ body {
   fill: black;
   transition: 1s;
   outline: none !important;
-  fill: #000;
-  stroke: #000;
 }
 
 #deezer-icon:hover{
@@ -612,8 +610,8 @@ hr.small {
   text-align: center;
 }
 #errorMessage{
-  color: red;
-  font-size: 30px;
+  font-family: LemonMilk;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -633,8 +631,8 @@ hr.small {
 }
 
 #nlConsole{
-  color: red;
-  font-size: 30px;
+  font-family: LemonMilk;
+  font-size: 24px;
   text-align: center;
 }
 

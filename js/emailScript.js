@@ -9,10 +9,10 @@ function sendEmail() {
   var errorMsg = document.getElementById('errorMessage');
 
    if (c_name === '' || c_email === '' || c_subject === '' || msgContent === '') {
-     errorMessage.innerHTML = "<p>Um dos campos acima não está preenchido corretamente.</p><p>Some fields above aren't filled right.</p>";
+     errorMessage.innerHTML = "<p style='color: red'>Um dos campos acima não está preenchido corretamente.</p><p style='color: red; font-size: 20px;'>Some fields above aren't filled right.</p>";
    }
    else{
-     errorMessage.innerHTML = "<p>Email enviado com sucesso!</p><p>Email succesfully sent!</p>";
+     errorMessage.innerHTML = "<p style='color: #fff;'>Email enviado com sucesso!</p><p style='color: #fff;'>Email succesfully sent!</p>";
    }
 
    http.onload = function() {
@@ -25,10 +25,10 @@ function sendEmail() {
    var consoleSpace = document.getElementById('nlConsole');
 
    if(emailAddress != ''){
-     consoleSpace.innerHTML = "<p>Inscrição realizada com sucesso.</p>"
+     consoleSpace.innerHTML = "<p style='color: #fff;'>Inscrição realizada com sucesso.</p><p style='color: #fff;'>Subscription sucessfully made.</p>"
    }
    else {
-     consoleSpace.innerHTML = "<p>Informe um endereço de email.</p>"
+     consoleSpace.innerHTML = "<p style='color: red;'>Informe um endereço de email.</p> <p style='color: red; font-size: 20px;'>Inform an email address.</p>"
    }
 
  };
