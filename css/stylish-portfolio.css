@@ -547,11 +547,13 @@ hr.small {
   margin: 2% !important;
   color: #AAA !important;
 }
-
-.contact-content form{
-  /*display: table-caption;*/
+.contact-content a{
+  color: #FBCF47;
 }
 
+.contact-block{
+  text-align: center;
+}
 .form-content{
   width: 80%;
   display: block;
@@ -582,14 +584,22 @@ hr.small {
   border-radius: 20px;
   border-color: #FBCF47;
 }
-
+.presskit-informer{
+  font-family: LemonMilk;
+  text-align: center;
+}
+#errorMessage{
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
 .blog-content{
-  width: 100%;
-  margin: 2%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 footer {
     padding: 100px 0;

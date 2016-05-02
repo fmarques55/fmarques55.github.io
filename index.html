@@ -28,6 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="shortcut icon" href="band-icon.jpg">
 </head>
 
 <body>
@@ -108,7 +109,7 @@
       <h1 class="page-title">DOWNLOADS</h1>
       <div class="row">
         <div class="col-md-4">
-          <img src="img/wanderlust-albumcover.jpg" alt="" class="album-art" />
+          <a href="astronautaeseusamigos_Wanderlust(2016).zip"><img src="img/wanderlust-albumcover.jpg" alt="" class="album-art" /></a>
         </div>
         <div class="col-md-8">
           <div class="album-title">
@@ -195,6 +196,7 @@
             <br> We are currently working on future dates, so keep an eye open on the updates around here and in our social network.
           </p>
         </div>
+        <!-- A parte comentada abaixo está relacionada à tabela de horários dos shows -->
         <!-- <table class="shows-table">
           <tr>
             <td>
@@ -266,11 +268,11 @@
         <div class="row">
           <!-- Grid 1 -->
           <div class="col-md-4">
-            <a href="#" data-toggle="modal" data-target="#modalL1G1"><img src="img/astronaut4.png" alt="" class="image-thumbnail" /></a>
+            <a href="#" data-toggle="modal" data-target="#modalL1G1"><img src="img/Pirenópolis_1.jpg" alt="" class="image-thumbnail" /></a>
             <div id="modalL1G1" class="modal fade" role="dialog">
               <div class="gallery-big-image">
                 <div style="width:100%;">
-                  <img class="big-image" src="img/astronaut4.png" alt="" />
+                  <img class="big-image" src="img/Pirenópolis_1.jpg" alt="" />
                 </div>
                 <!-- TEXTO DE DESCRIÇÃO DA IMAGEM AQUI -->
                 <div class="image-desc">
@@ -387,7 +389,7 @@
         <!-- Line 1 of a gallery -->
         <div class="row">
           <div class="col-md-6">
-            <a href="#" data-toggle="modal" data-target="#videoModalL1G1"><img src="img/wanderlust-albumcover.jpg" alt="" class="image-thumbnail" /></a>
+            <a href="#" data-toggle="modal" data-target="#videoModalL1G1"><img src="img/believe.png" alt="" class="image-thumbnail" /></a>
 
             <div id="videoModalL1G1" class="modal fade" role="dialog">
               <div class="videoModal-internal">
@@ -399,11 +401,11 @@
 
           <!-- Line 2 of videos-->
           <div class="col-md-6">
-            <a href="#" data-toggle="modal" data-target="#videoModalL1G2"><img src="img/wanderlust-albumcover.jpg" alt="" class="image-thumbnail" /></a>
+            <a href="#" data-toggle="modal" data-target="#videoModalL1G2"><img src="img/aos_seus_amores.png" alt="" class="image-thumbnail" /></a>
 
             <div id="videoModalL1G2" class="modal fade" role="dialog">
               <div class="videoModal-internal">
-                <iframe width="100%" class="iframe-video-modal" height="100%" src="https://www.youtube.com/embed/KMl8UrI-cec">
+                <iframe width="100%" class="iframe-video-modal" height="100%" src="https://www.youtube.com/embed/TZd6B0IvBhQ">
                 </iframe>
               </div>
             </div>
@@ -424,35 +426,46 @@
                 <h3>
           Fale conosco / Come and say hi to us
         </h3>
+        <br>
                 <div class="row">
-                  <div class="col-md-4">
-                    <h4>
-              Contato 1
-            </h4>
+                  <div class="col-md-4 contact-block">
+                    <h4>Shows/Booking</h4>
+                    <p>
+                      oi@astronautaeseusamigos.com
+                    </p>
                   </div>
-                  <div class="col-md-4">
-                    <h4>
-              Contato 2
-            </h4>
+                  <div class="col-md-4 contact-block">
+                    <h4>Contato/Contact</h4>
+                    <p>
+                      oi@astronautaeseusamigos.com
+                    </p>
                   </div>
-                  <div class="col-md-4">
-                    <h4>
-              Contato 3
-            </h4>
+                  <div class="col-md-4 contact-block">
+                    <h4>Acessoria de Imprensa/ Presskit</h4>
+                    <p>
+                      ma.mateusaraujo@gmail.com
+                    </p>
                   </div>
                 </div>
-                <form action="" method="">
+                <form method="POST">
                   <div class="form-content">
-                    <input type="text" name="nameInput" value="" placeholder="Nome" class="contact-input">
+                    <input type="text" id="nameInput" value="" placeholder="Nome" class="contact-input" required="required">
                     <br>
-                    <input type="text" name="emailInput" value="" placeholder="Email" class="contact-input">
+                    <input type="email" id="emailInput" value="" placeholder="Email" class="contact-input" required="required">
                     <br>
-                    <input type="text" name="subjectInput" value="" placeholder="Assunto" class="contact-input">
+                    <input type="text" id="subjectInput" value="" placeholder="Assunto" class="contact-input" required="required">
                     <br>
-                    <textarea name="message" rows="10" cols="40" value="Mensagem: " class="contact-input"></textarea>
-                    <input type="submit" name="submit" value="Enviar" class="submit-contact-form">
+                    <textarea id="message" rows="10" cols="40" value="Mensagem: " class="contact-input" required="required"></textarea>
+                    <input type="submit" name="submit" value="Enviar" class="submit-contact-form" onclick="sendEmail()">
                   </div>
                 </form>
+                <!-- Essa div recebe conteudo virtual via Javascript -->
+                <div id="errorMessage">
+                </div>
+                <div class="centralized">
+                  <a href="release_astronautaeseusamigos.pdf"><p class="presskit-informer">Download da Release de Imprensa</p></a>
+                  <a href="astronautaeseusamigos_presskit.pdf" class="presskit-informer"><p class="presskit-informer">Download Release Presskit</p></a>
+                </div>
               </div>
             </div>
           </div>
@@ -477,6 +490,8 @@
           <!-- Custom Theme JavaScript -->
           <script src="js/menu-script.js"></script>
 
+          <!-- Email -->
+          <script src="js/emailScript.js"></script>
 </body>
 
 </html>
