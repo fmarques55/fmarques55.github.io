@@ -1,4 +1,4 @@
- function sendEmail() {
+function sendEmail() {
    var c_name = document.getElementById("nameInput").value;
    var c_email = document.getElementById("emailInput").value;
    var c_subject = document.getElementById("subjectInput").value;
@@ -15,7 +15,20 @@
      errorMessage.innerHTML = "<p>Email enviado com sucesso!</p><p>Email succesfully sent!</p>";
    }
 
-   http.onload = function {
+   http.onload = function() {
      alert("Oi")
    }
- }
+ };
+
+ function subscribe(){
+   var emailAddress = document.getElementById('emailNewsletterInput').value;
+   var consoleSpace = document.getElementById('nlConsole');
+
+   if(emailAddress != ''){
+     consoleSpace.innerHTML = "<p>Inscrição realizada com sucesso.</p>"
+   }
+   else {
+     consoleSpace.innerHTML = "<p>Informe um endereço de email.</p>"
+   }
+
+ };

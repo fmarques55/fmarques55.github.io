@@ -84,11 +84,14 @@
       <a href="https://www.youtube.com/channel/UCzS2Y1t1xBMTex5i7mEhihw" target="_blank" class="fa fa-youtube social-icon"></a> &nbsp;
       <a href="https://itunes.apple.com/us/artist/astronauta-e-seus-amigos/id1089027074" target="_blank" class="fa fa-music social-icon"></a> &nbsp;
       <a href="http://open.spotify.com/album/7pIVocKr3StDOcCXgSragB" target="_blank" class="fa fa-spotify social-icon"></a> &nbsp;
-      <a href="http://www.deezer.com/artist/9953264" target="_blank" class="fa fa-signal social-icon"></a> &nbsp;
+      <a href="http://www.deezer.com/artist/9953264" target="_blank"><img src="img/deezer.svg" class="deezer-iconSVG" alt="" /></a> &nbsp;
       <a href="https://soundcloud.com/astronautaeseusamigos" target="_blank" class="fa fa-soundcloud social-icon"></a> &nbsp;
       <h1 style="font-family: Astronauta; color: #fff;">astronauta e seus amigos</h1>
       <br>
-      <a href="#" data-toggle="modal" data-target="#videoModal" class="fa fa-play youtube-player-icon"></a>
+      <a href="#" data-toggle="modal" data-target="#videoModal" class="svg">
+        <img src="img/2(500x500)-06.svg" alt=""  class="player-iconSVG" onmouseover="this.src='img/1(300x300)-05.svg'" onmouseout="this.src='img/2(500x500)-06.svg'"/>
+          <!-- <object id="believe-player-icon" data="img/2(500x500)-06.svg" alt="" class="player-iconSVG"></object> -->
+      </a>
       <br>
       <a href="" data-toggle="modal" data-target="#downloadModal" class="download-link">Faça o Download de Wanderlust <br> Download Wanderlust </a>
     </div>
@@ -131,7 +134,7 @@
               <iframe src="https://embed.spotify.com/?uri=spotify:album:7pIVocKr3StDOcCXgSragB" width="100%" height="300px" frameborder="0" allowtransparency="true"></iframe>
             </div>
 
-            <a href="astronautaeseusamigos_Wanderlust(2016).zip" class="download-link centralized">&nbsp;DOWNLOAD GRATUITO DE WANDERLUST (Free Download for Wanderlust)</a>
+            <a href="astronautaeseusamigos_Wanderlust(2016).zip" class="download-link centralized">&nbsp;Faça o download de Wanderlust (Click here to download Wanderlust).</a>
           </div>
         </div>
       </div>
@@ -147,7 +150,7 @@
         <div class="col-md-12">
           <div class="news-title">
             <h2>Estréia do novo site!</h2>
-            <h4>Data: 29/04/2016</h4>
+            <h4>Data: 02/05/2016</h4>
           </div>
           <div class="news-content">
             <p>
@@ -441,13 +444,13 @@
                     </p>
                   </div>
                   <div class="col-md-4 contact-block">
-                    <h4>Acessoria de Imprensa/ Presskit</h4>
+                    <h4>Assessoria de Imprensa/ Presskit</h4>
                     <p>
                       ma.mateusaraujo@gmail.com
                     </p>
                   </div>
                 </div>
-                <form method="POST">
+                <form role="form">
                   <div class="form-content">
                     <input type="text" id="nameInput" value="" placeholder="Nome" class="contact-input" required="required">
                     <br>
@@ -456,15 +459,25 @@
                     <input type="text" id="subjectInput" value="" placeholder="Assunto" class="contact-input" required="required">
                     <br>
                     <textarea id="message" rows="10" cols="40" value="Mensagem: " class="contact-input" required="required"></textarea>
-                    <input type="submit" name="submit" value="Enviar" class="submit-contact-form" onclick="sendEmail()">
+                    <button type="button" name="submit" value="Enviar" class="submit-contact-form" onclick="sendEmail()">Enviar</button>
                   </div>
                 </form>
                 <!-- Essa div recebe conteudo virtual via Javascript -->
                 <div id="errorMessage">
                 </div>
                 <div class="centralized">
-                  <a href="release_astronautaeseusamigos.pdf"><p class="presskit-informer">Download da Release de Imprensa</p></a>
-                  <a href="astronautaeseusamigos_presskit.pdf" class="presskit-informer"><p class="presskit-informer">Download Release Presskit</p></a>
+                  <a href="release_astronautaeseusamigos.pdf"><p class="presskit-informer">Download do Release de Imprensa</p></a>
+                  <a href="astronautaeseusamigos_presskit.pdf" class="presskit-informer"><p class="presskit-informer">Download Release Press</p></a>
+                </div>
+                <h3>Inscreva-se em nossa newsletter / Subscribe to our newsletter</h3>
+                <div class="newsletter-content">
+                  <form role="form">
+                    <div class="form-content">
+                        <input type="text" id="emailNewsletterInput" class="newsletter-input" value="" placeholder="Email" required="required">
+                        <button type="button" class="submit-contact-form" name="submit" value="Inscrever" onclick="subscribe()">Inscrever</button>
+                  </form>
+                  <div id="nlConsole">
+                  </div>
                 </div>
               </div>
             </div>
@@ -492,6 +505,7 @@
 
           <!-- Email -->
           <script src="js/emailScript.js"></script>
+
 </body>
 
 </html>
